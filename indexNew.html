@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Thin Lens Demo</title>
+
+<script src="https://www.geogebra.org/apps/deployggb.js"></script>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.appletbox{
+    border:1px solid #cccccc;
+    padding:10px;
+    margin:20px 0;
+    background:#fafafa;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<h1>Thin Lens Demonstration</h1>
+
+<p>
+This interactive demonstration shows how a thin lens forms an image.
+Move the object in the GeoGebra applet to see how the image position
+changes.
+</p>
+
+<p>
+Notice the following:
+</p>
+
+<ul>
+<li>When the object is far away, the image forms near the focal plane.</li>
+<li>When the object moves inside the focal length, the image becomes virtual.</li>
+<li>The ray diagram illustrates the basic geometric optics construction.</li>
+</ul>
+
+
+<div class="appletbox">
+
+<div id="ggb-element"></div>
+
+</div>
+
+
+<p>
+This simple geometric construction is the basis for many imaging systems,
+including optical microscopes and electron microscopes. In later sections
+we will extend this idea to multiple lenses and to electron optical systems.
+</p>
+
+
+
+<script>
+
+var params = {
+    appName: "classic",
+    material_id: "KYNsUZXH",
+    width: 800,
+    height: 500,
+    showToolBar: false,
+    showAlgebraInput: false,
+    showMenuBar: false
+};
+
+var applet = new GGBApplet(params, true);
+
+window.addEventListener("load", function() {
+    applet.inject('ggb-element');
+});
+
+</script>
+
+
+</body>
+</html>
